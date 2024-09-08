@@ -24,14 +24,19 @@ This project scrapes the Billboard Top 100 songs for a given year and creates a 
    git clone https://github.com/adithyakb10/billboard-to-spotify.git
    cd billboard-to-spotify
    ```
+2. **Create a venv**
+   ```bash
+   python -m venv .venv
+   ```
+   This command creates a venv, the command to activate the venv depends on your OS
 
-2. **Install the required packages:**
+4. **Install the required packages:**
 
    ```bash
    pip install -r requirements.txt
    ```
 
-3. **Create a `.env` file** in the root directory of the project with the following environment variables:
+5. **Create a `.env` file** in the root directory of the project with the following environment variables:
 
    ```
    SPOTIPY_CLIENT_ID=your_spotify_client_id
@@ -45,7 +50,7 @@ This project scrapes the Billboard Top 100 songs for a given year and creates a 
 
    The REDIRECT_URI can be localhost for development. Ex: http://localhost:8888/callback
 
-5. **Run the script:**
+6. **Run the script:**
 
    ```bash
    python main.py
